@@ -1,0 +1,105 @@
+name: Sync DATASUS TUP
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Diariamente às 8h UTC (5h BRT)
+  workflow_dispatch:  # Permite executar manualmente
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Histórico completo
+        
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+        
+      - name: Download TabelaUnificada ZIPs (últimos 6)
+        run: |
+          mkdir -p tabelas
+          cd tabelas
+          
+          # Baixa lista de arquivos e ordena por data
+          lftp -c "
+          set ftp:ssl-allow no;
+          open ftp://anonymous:@ftp2.datasus.gov.br;
+          cd /pub/sistemas/tup/downloads;
+          cls -1 TabelaUnificada_*.zip > /tmp/arquivos.txt
+          "
+          
+          # Pega apenas os 6 mais recentes
+          tail -n 6 /tmp/arquivos.txt > /tmp/ultimos6.txt
+          
+          # Baixa os arquivos
+          while IFS= read -r arquivo; do
+            lftp -c "
+            set ftp:ssl-allow no;
+            open ftp://anonymous:@ftp2.datasus.gov.br;
+            cd /pub/sistemas/tup/downloads;
+            get -c \"$arquivo\"
+            "
+          done < /tmp/ultimos6.txt
+          
+      - name: Download notas técnicas completas
+        run: |
+          lftp -c "
+          set ftp:ssl-allow no;
+          open ftp://anonymous:@ftp2.datasus.gov.br;
+          mirror -v --only-newer --parallel=3 /pub/sistemas/tup/downloads/notastecnicas ./notastecnicas
+          "
+      
+      - name: Clean old files
+        run: |
+          # Remove arquivos TabelaUnificada que não estão na lista dos 6 mais recentes
+          cd tabelas
+          for arquivo in TabelaUnificada_*.zip; do
+            if [ -f "$arquivo" ] && ! grep -q "$arquivo" /tmp/ultimos6.txt; then
+              echo "Removendo arquivo antigo: $arquivo"
+              rm "$arquivo"
+            fi
+          done
+      
+      - name: Generate README with file list
+        run: |
+          cat > README.md << 'EOF'
+          # DATASUS - Tabela Unificada e Notas Técnicas
+          
+          Repositório automatizado de arquivos do Sistema TUP do DATASUS.
+          
+          **Fonte:** ftp://ftp2.datasus.gov.br/pub/sistemas/tup/downloads/
+          
+          **Última atualização:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          
+          ## 📦 Tabelas Unificadas (Últimos 6 meses)
+          
+          EOF
+          
+          ls -lh tabelas/TabelaUnificada_*.zip 2>/dev/null | awk '{print "- `"$9"` ("$5")"}' >> README.md || echo "Nenhum arquivo disponível ainda" >> README.md
+          
+          cat >> README.md << 'EOF'
+          
+          ## 📄 Notas Técnicas
+          
+          Disponíveis na pasta [notastecnicas](./notastecnicas/)
+          
+          ---
+          
+          *Atualizado automaticamente via GitHub Actions*
+          EOF
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          
+          if ! git diff --staged --quiet; then
+            git commit -m "🔄 Atualização automática - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          else
+            echo "Nenhuma alteração detectada"
+          fi
