@@ -1,7 +1,7 @@
 # 📊 DATASUS - Tabela Unificada SIGTAP
 
 [![Sync Status](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml/badge.svg)](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml)
-[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--01--29-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
+[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--01--30-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
 
 Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Sistema de Gerenciamento da Tabela de Procedimentos (SIGTAP)** do DATASUS.
 
@@ -11,7 +11,7 @@ Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Siste
 
 | Arquivo | Período | Tamanho | Download |
 |---------|---------|---------|----------|
-| `TabelaUnificada_202601_v2601221740.zip` | Janeiro/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202601_v2601221740.zip) |
+| `TabelaUnificada_202601_v2601291504.zip` | Janeiro/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202601_v2601291504.zip) |
 | `TabelaUnificada_202512_v2601221256.zip` | Dezembro/2025 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202512_v2601221256.zip) |
 | `TabelaUnificada_202511_v2511111519.zip` | Novembro/2025 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202511_v2511111519.zip) |
 | `TabelaUnificada_202510_v2510160954.zip` | Outubro/2025 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202510_v2510160954.zip) |
