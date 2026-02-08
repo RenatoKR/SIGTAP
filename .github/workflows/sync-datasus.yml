@@ -76,6 +76,7 @@ jobs:
           echo "TOTAL_SIZE=$(du -sh tabelas | cut -f1)" >> $GITHUB_ENV
           echo "NOTAS_COUNT=$(find notastecnicas -type f | wc -l)" >> $GITHUB_ENV
           echo "TABELAS_COUNT=$(ls -1 tabelas/*.zip 2>/dev/null | wc -l)" >> $GITHUB_ENV
+          echo "LAST_UPDATE=$(TZ='America/Sao_Paulo' date '+%Y-%m-%d %H:%M:%S BRT')" >> $GITHUB_ENV
       
       - name: Generate README with file list
         run: |
@@ -198,10 +199,11 @@ jobs:
           
           <div align="center">
           
-          **🤖 Atualizado automaticamente** | Última execução: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
-          
-          </div>
           EOF
+          
+          echo "**🤖 Atualizado automaticamente** | Última execução: $LAST_UPDATE" >> README.md
+          echo "" >> README.md
+          echo "</div>" >> README.md
       
       - name: Commit and push changes
         run: |
