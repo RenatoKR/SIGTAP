@@ -1,7 +1,7 @@
 # 📊 DATASUS - Tabela Unificada SIGTAP
 
 [![Sync Status](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml/badge.svg)](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml)
-[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--02--10-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
+[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--02--11-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
 
 Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Sistema de Gerenciamento da Tabela de Procedimentos (SIGTAP)** do DATASUS.
 
@@ -20,17 +20,17 @@ Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Siste
 
 ## 📄 Notas Técnicas
 
-> **Total:** 217 documentos
+> **Total:** 218 documentos
 
 Todas as notas técnicas disponíveis estão na pasta [`notastecnicas/`](./notastecnicas/)
 
 ### Últimas Notas
 
+- [`nota_tecnica_cgsi_sigtap_2026_02.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2026_02.pdf)
 - [`nota_tecnica_cgsi_sigtap_2026_01.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2026_01.pdf)
 - [`nota_tecnica_cgsi_sigtap_2025_12.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2025_12.pdf)
 - [`nota_tecnica_cgsi_sigtap_2025_11.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2025_11.pdf)
 - [`nota_tecnica_cgsi_sigtap_2025_10.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2025_10.pdf)
-- [`nota_tecnica_cgsi_sigtap_2025_09.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2025_09.pdf)
 
 ## 📖 Sobre o SIGTAP
 
@@ -85,6 +85,6 @@ Este repositório apenas facilita o acesso aos arquivos oficiais.
 
 <div align="center">
 
-**🤖 Atualizado automaticamente** | Última execução: 2026-02-10 05:44:58 BRT
+**🤖 Atualizado automaticamente** | Última execução: 2026-02-11 05:42:21 BRT
 
 </div>
