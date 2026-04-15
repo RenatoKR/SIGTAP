@@ -1,7 +1,7 @@
 # 📊 DATASUS - Tabela Unificada SIGTAP
 
 [![Sync Status](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml/badge.svg)](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml)
-[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--04--14-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
+[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--04--15-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
 
 Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Sistema de Gerenciamento da Tabela de Procedimentos (SIGTAP)** do DATASUS.
 
@@ -85,6 +85,6 @@ Este repositório apenas facilita o acesso aos arquivos oficiais.
 
 <div align="center">
 
-**🤖 Atualizado automaticamente** | Última execução: 2026-04-14 06:12:45 BRT
+**🤖 Atualizado automaticamente** | Última execução: 2026-04-15 06:13:29 BRT
 
 </div>
