@@ -1,7 +1,7 @@
 # 📊 DATASUS - Tabela Unificada SIGTAP
 
 [![Sync Status](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml/badge.svg)](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml)
-[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--05--08-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
+[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--05--09-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
 
 Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Sistema de Gerenciamento da Tabela de Procedimentos (SIGTAP)** do DATASUS.
 
@@ -11,26 +11,26 @@ Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Siste
 
 | Arquivo | Período | Tamanho | Download |
 |---------|---------|---------|----------|
+| `TabelaUnificada_202605_v2605081533.zip` | Maio/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202605_v2605081533.zip) |
 | `TabelaUnificada_202604_v2604291523.zip` | Abril/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202604_v2604291523.zip) |
 | `TabelaUnificada_202603_v2603111027.zip` | Março/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202603_v2603111027.zip) |
 | `TabelaUnificada_202602_v2602261644.zip` | Fevereiro/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202602_v2602261644.zip) |
 | `TabelaUnificada_202601_v2602261640.zip` | Janeiro/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202601_v2602261640.zip) |
 | `TabelaUnificada_202512_v2602261637.zip` | Dezembro/2025 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202512_v2602261637.zip) |
-| `TabelaUnificada_202511_v2602261636.zip` | Novembro/2025 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202511_v2602261636.zip) |
 
 ## 📄 Notas Técnicas
 
-> **Total:** 220 documentos
+> **Total:** 221 documentos
 
 Todas as notas técnicas disponíveis estão na pasta [`notastecnicas/`](./notastecnicas/)
 
 ### Últimas Notas
 
+- [`nota_tecnica_cgsi_sigtap_2026_05.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2026_05.pdf)
 - [`nota_tecnica_cgsi_sigtap_2026_04.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2026_04.pdf)
 - [`nota_tecnica_cgsi_sigtap_2026_03.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2026_03.pdf)
 - [`nota_tecnica_cgsi_sigtap_2026_02.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2026_02.pdf)
 - [`nota_tecnica_cgsi_sigtap_2026_01.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2026_01.pdf)
-- [`nota_tecnica_cgsi_sigtap_2025_12.pdf`](https://github.com/RenatoKR/SIGTAP/blob/main/notastecnicas/nota_tecnica_cgsi_sigtap_2025_12.pdf)
 
 ## 📖 Sobre o SIGTAP
 
@@ -85,6 +85,6 @@ Este repositório apenas facilita o acesso aos arquivos oficiais.
 
 <div align="center">
 
-**🤖 Atualizado automaticamente** | Última execução: 2026-05-08 06:12:11 BRT
+**🤖 Atualizado automaticamente** | Última execução: 2026-05-09 06:14:17 BRT
 
 </div>
