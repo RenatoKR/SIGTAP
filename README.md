@@ -1,7 +1,7 @@
 # 📊 DATASUS - Tabela Unificada SIGTAP
 
 [![Sync Status](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml/badge.svg)](https://github.com/RenatoKR/SIGTAP/actions/workflows/sync-datasus.yml)
-[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--07--10-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
+[![Última Atualização](https://img.shields.io/badge/última%20atualização-2026--07--11-blue)](https://github.com/RenatoKR/SIGTAP/commits/main)
 
 Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Sistema de Gerenciamento da Tabela de Procedimentos (SIGTAP)** do DATASUS.
 
@@ -11,12 +11,12 @@ Repositório automatizado com mirror dos arquivos da **Tabela Unificada do Siste
 
 | Arquivo | Período | Tamanho | Download |
 |---------|---------|---------|----------|
+| `TabelaUnificada_202607_v2607101010.zip` | Julho/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202607_v2607101010.zip) |
 | `TabelaUnificada_202606_v2606091427.zip` | Junho/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202606_v2606091427.zip) |
 | `TabelaUnificada_202605_v2605210940.zip` | Maio/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202605_v2605210940.zip) |
 | `TabelaUnificada_202604_v2605181544.zip` | Abril/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202604_v2605181544.zip) |
 | `TabelaUnificada_202603_v2605181534.zip` | Março/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202603_v2605181534.zip) |
 | `TabelaUnificada_202602_v2602261644.zip` | Fevereiro/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202602_v2602261644.zip) |
-| `TabelaUnificada_202601_v2602261640.zip` | Janeiro/2026 | 2.1M | [⬇️ Download](https://github.com/RenatoKR/SIGTAP/raw/main/tabelas/TabelaUnificada_202601_v2602261640.zip) |
 
 ## 📄 Notas Técnicas
 
@@ -85,6 +85,6 @@ Este repositório apenas facilita o acesso aos arquivos oficiais.
 
 <div align="center">
 
-**🤖 Atualizado automaticamente** | Última execução: 2026-07-10 07:47:57 BRT
+**🤖 Atualizado automaticamente** | Última execução: 2026-07-11 06:22:34 BRT
 
 </div>
